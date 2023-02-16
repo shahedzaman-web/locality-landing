@@ -11,7 +11,9 @@
     />
     <!-- Development css -->
     <link rel="stylesheet" href="src/css/style.css" />
-
+<!-- JavaScript -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
@@ -132,7 +134,6 @@
                 </div>
               </div>
             </div>
-
             <!--   HEADER  end here   -->
             <!-- navbar start here -->
             <div class="flex flex-row">
@@ -145,6 +146,13 @@
                     class="active block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#hero"
                     >Home</a
+                  >
+                </li>
+                <li class="relative hover:text-black">
+                  <a
+                    class="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    href="#about"
+                    >About us</a
                   >
                 </li>
                 <li class="relative hover:text-black">
@@ -185,15 +193,153 @@
       <!-- navbar end here -->
     </header>
     <!-- banner start here -->
-    <section class="w-full h-screen mt-20">
-      <img
-        src="./src/img/banner.jpg"
-        alt=""
-        class="h-full w-full object-fit-cover"
-      />
-    </section>
+ 
+      <!-- =========={ MAIN }==========  -->
+  <main id="content">
+    <!-- hero start -->
+		<div id="hero" class="section relative z-0 py-16 md:pt-32 md:pb-20">
+		  <div class="container xl:max-w-6xl mx-auto px-4">
+        <div class="container xl:max-w-6xl mx-auto px-4">
+          <div class="flex flex-wrap  flex-row mx-4 lg:justify-end ">
+            <!-- content -->
+            <div class="flex-shrink  flex-row mx-auto w-1/2 sm:w-9/12 lg:w-1/2 self-center ">
+              <img src="src/img/banner.png" class="object-contain  h-96 w-96 self-center" alt="creative agency">
+            </div><!-- end content -->
+            <!-- text -->
+		      <div class="flex-shrink max-w-full w-full md:w-9/12 lg:w-1/2 self-center  align-center items-center justify-center">
+		        <div class="text-center lg:text-left mt-6 lg:mt-0">
+		          <div class="mb-12">
+		            <h1 class="text-4xl leading-normal text-white font-bold mb-4">One Stop Solution<br>For <span data-toggle="typed" data-options='{"strings": ["All", "Your", "Needs"]}'></span></h1>
+		            <p class="text-white leading-relaxed font-light text-xl mx-auto pb-2">No matter what you need, We've got you covered with our comprehensive services offerings.</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div><!-- end Hero -->
     <!-- banner end here -->
 
+
+
+
+
+     <!-- about us start here -->
+       <!-- start services -->
+    <div
+    id="about"
+    bg-gradient-to-r
+    from-primary
+    to-secondary
+    class="section relative pt-20 pb-8 md:pt-16 md:pb-0"
+  >
+    <div class="container xl:max-w-6xl mx-auto px-4">
+      <!-- Heading start -->
+      <header class=" mx-auto mb-12 lg:px-20">
+        <h2
+          class="text-2xl leading-normal mb-2 font-bold text-center text-white dark:text-gray-100"
+        >
+          <span class="font-light ">About</span> us
+        </h2>
+        <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 60"
+        style="margin: 0 auto; height: 35px"
+        xml:space="preserve"
+      >
+        <circle
+          cx="50.1"
+          cy="30.4"
+          r="5"
+          class="stroke-primary"
+          style="fill: transparent; stroke-width: 2; stroke-miterlimit: 10"
+        ></circle>
+        <line
+          x1="55.1"
+          y1="30.4"
+          x2="100"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2; stroke-miterlimit: 10"
+        ></line>
+        <line
+          x1="45.1"
+          y1="30.4"
+          x2="0"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2; stroke-miterlimit: 10"
+        ></line>
+      </svg>
+
+        <div class="flex lg:flex-row items-center justify-center my-4 flex-col ">
+          <div class="rounded-full bg-red-500 p-2 shadow">
+            <svg fill="#ffffff" width="3rem" height="3rem" viewBox="0 0 24 24" id="target-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M22,5.84a1,1,0,0,0-.54-.73l-1.7-.86-.86-1.7A1,1,0,0,0,18.16,2a1,1,0,0,0-.87.28l-2,2A1,1,0,0,0,15,5V7.59l-3.71,3.7a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16.41,9H19a1,1,0,0,0,.71-.29l2-2A1,1,0,0,0,22,5.84Z" style="fill: rgb(44, 169, 188);"></path><path id="primary" d="M12,22A10,10,0,0,1,12,2a1,1,0,0,1,0,2,8,8,0,1,0,8,8,1,1,0,0,1,2,0A10,10,0,0,1,12,22Zm5-10a1,1,0,0,0-2,0,3,3,0,1,1-3-3,1,1,0,0,0,0-2,5,5,0,1,0,5,5Z" style="fill: #fff"></path></svg>
+           </div>
+        <p
+         class=" pl-6 hover:text-gray-400  text-gray-100 leading-relaxed font-light text-xl mx-auto py-2 text-justify "
+      >
+      Locality aims to transform the handy-work solutions service. Locality delivers unmatched business value to customers through a combination of process excellence, quality handy-work and service delivery.  
+      </p>
+        </div>
+          <div class="flex lg:flex-row items-center justify-center my-4 flex-col ">
+          <div class="rounded-full bg-red-500 p-2 shadow">
+           <svg fill="#ffffff" width="3rem" height="3rem" viewBox="0 0 24 24" id="target-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M22,5.84a1,1,0,0,0-.54-.73l-1.7-.86-.86-1.7A1,1,0,0,0,18.16,2a1,1,0,0,0-.87.28l-2,2A1,1,0,0,0,15,5V7.59l-3.71,3.7a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16.41,9H19a1,1,0,0,0,.71-.29l2-2A1,1,0,0,0,22,5.84Z" style="fill: rgb(44, 169, 188);"></path><path id="primary" d="M12,22A10,10,0,0,1,12,2a1,1,0,0,1,0,2,8,8,0,1,0,8,8,1,1,0,0,1,2,0A10,10,0,0,1,12,22Zm5-10a1,1,0,0,0-2,0,3,3,0,1,1-3-3,1,1,0,0,0,0-2,5,5,0,1,0,5,5Z" style="fill: #fff"></path></svg>
+          </div>
+          <p
+           class=" pl-6  text-gray-100 leading-relaxed font-light text-xl mx-auto py-2 text-justify "
+        >
+Our consultants share their expertise and deep industry knowledge with them to analyze current issues. Based on the analysis, we identify the issue's needs and can facilitate proper solution.  
+      </p>
+         </div>
+           <div class="flex lg:flex-row items-center justify-center my-4 flex-col ">
+          <div class="rounded-full bg-red-500 p-2 shadow">
+           <svg fill="#ffffff" width="3rem" height="3rem" viewBox="0 0 24 24" id="target-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M22,5.84a1,1,0,0,0-.54-.73l-1.7-.86-.86-1.7A1,1,0,0,0,18.16,2a1,1,0,0,0-.87.28l-2,2A1,1,0,0,0,15,5V7.59l-3.71,3.7a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16.41,9H19a1,1,0,0,0,.71-.29l2-2A1,1,0,0,0,22,5.84Z" style="fill: rgb(44, 169, 188);"></path><path id="primary" d="M12,22A10,10,0,0,1,12,2a1,1,0,0,1,0,2,8,8,0,1,0,8,8,1,1,0,0,1,2,0A10,10,0,0,1,12,22Zm5-10a1,1,0,0,0-2,0,3,3,0,1,1-3-3,1,1,0,0,0,0-2,5,5,0,1,0,5,5Z" style="fill: #fff"></path></svg>
+          </div>
+         <p
+          class=" pl-6  text-gray-100 leading-relaxed font-light text-xl mx-auto py-2 text-justify "
+       >
+       At Locality, we believe in the power of trade to bring people and communities together. We know that big corporations have had a major impact on small businesses in recent years, sometimes taking away from local cultures, arts, and traditions. That's why we're working to create modern and high-quality products and services that support and enhance local small businesses.  
+      </p>
+         </div>
+           <div class="flex lg:flex-row items-center justify-center my-4 flex-col ">
+          <div class="rounded-full bg-red-500 p-2 shadow">
+           <svg fill="#ffffff" width="3rem" height="3rem" viewBox="0 0 24 24" id="target-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M22,5.84a1,1,0,0,0-.54-.73l-1.7-.86-.86-1.7A1,1,0,0,0,18.16,2a1,1,0,0,0-.87.28l-2,2A1,1,0,0,0,15,5V7.59l-3.71,3.7a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16.41,9H19a1,1,0,0,0,.71-.29l2-2A1,1,0,0,0,22,5.84Z" style="fill: rgb(44, 169, 188);"></path><path id="primary" d="M12,22A10,10,0,0,1,12,2a1,1,0,0,1,0,2,8,8,0,1,0,8,8,1,1,0,0,1,2,0A10,10,0,0,1,12,22Zm5-10a1,1,0,0,0-2,0,3,3,0,1,1-3-3,1,1,0,0,0,0-2,5,5,0,1,0,5,5Z" style="fill: #fff"></path></svg>
+          </div>
+         <p
+          class=" pl-6  text-gray-100 leading-relaxed font-light text-xl mx-auto py-2 text-justify "
+       >
+       We're a team of experts in software engineering, development, and business, all passionate about making a difference. Our goal is to create user-friendly platforms that help tradespeople, craftsmen, artists, restaurants, and more to thrive. We want to bring back the unique and special experiences that make our communities so special, and we're doing it in a new and innovative way. Join us on this exciting journey! 
+      </p>
+         </div>
+           <div class="flex lg:flex-row items-center justify-center my-4 flex-col ">
+          <div class="rounded-full bg-red-500 p-2 shadow">
+           <svg fill="#ffffff" width="3rem" height="3rem" viewBox="0 0 24 24" id="target-2" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M22,5.84a1,1,0,0,0-.54-.73l-1.7-.86-.86-1.7A1,1,0,0,0,18.16,2a1,1,0,0,0-.87.28l-2,2A1,1,0,0,0,15,5V7.59l-3.71,3.7a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16.41,9H19a1,1,0,0,0,.71-.29l2-2A1,1,0,0,0,22,5.84Z" style="fill: rgb(44, 169, 188);"></path><path id="primary" d="M12,22A10,10,0,0,1,12,2a1,1,0,0,1,0,2,8,8,0,1,0,8,8,1,1,0,0,1,2,0A10,10,0,0,1,12,22Zm5-10a1,1,0,0,0-2,0,3,3,0,1,1-3-3,1,1,0,0,0,0-2,5,5,0,1,0,5,5Z" style="fill: #fff"></path></svg>
+          </div>
+         <p
+          class=" pl-6  text-gray-100 leading-relaxed font-light text-xl mx-auto py-2 text-justify "
+       >
+       If you're an agency or a company offering handyman or other trade services, such as photography, hair styling, women's essential needs, contact us today to enlist your businesses and reach for customer engagement. 
+
+ 
+      </p>
+         </div>
+     
+       </div>
+    
+      </header>
+      <!-- End heading -->
+
+   
+     
+    </div>
+  </div>
+  <!-- End Service -->
+  <!-- our services end here -->
+     <!-- about us end here -->
     <!-- our services start here -->
     <!-- start services -->
     <div
@@ -246,7 +392,7 @@
             ></line>
           </svg>
           <p
-            class="text-gray-100 leading-relaxed font-light text-xl mx-auto pb-2"
+            class="text-gray-100 leading-relaxed font-light text-xl mx-auto pb-2  text-justify  text-center"
           >
             We provide customers with state-of-the-art products and services to
             enrich local small businesses, culture, arts, food and more with our
@@ -269,25 +415,69 @@
             >
               <div class="inline-block text-gray-900 mb-4">
                 <!-- icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="2rem"
-                  height="2rem"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
+                <svg   width="2rem"
+                height="2rem" viewBox="0 0 120 120" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                <style type="text/css">
+                  .st0{fill:#FFB562;}
+                  .st1{fill:#3F3F3F;}
+                  .st2{fill:#F87474;}
+                  .st3{fill:#3AB0FF;}
+                  .st4{fill:#FFFFFF;}
+                </style>
+                
+                <g>
+                
+                <g>
+                
+                <ellipse class="st0" cx="18.6" cy="64.9" rx="6.6" ry="6.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.471 32.1518)"/>
+                
+                <ellipse class="st0" cx="101.4" cy="64.9" rx="6.6" ry="6.6" transform="matrix(0.9732 -0.2298 0.2298 0.9732 -12.2044 25.0397)"/>
+                
+                </g>
+                
+                <g>
+                
+                <path class="st0" d="M96.4,52.8h-5.6C90.8,35.8,77,22,60,22c-17,0-30.8,13.8-30.8,30.8h-5.6c0-20.1,16.3-36.4,36.4-36.4    S96.4,32.7,96.4,52.8z"/>
+                
+                </g>
+                
+                <g>
+                
+                <path class="st1" d="M69.3,101.4c-2.4,0-4-0.1-4.2-0.1l0.2-2.2c0.2,0,22.9,1.7,25.6-7.7c3-10.4,1.5-21.4,1.5-21.5l2.2-0.3    C94.7,70,96.2,81.1,93,92C90.5,100.3,76.5,101.4,69.3,101.4z"/>
+                
+                </g>
+                
+                <path class="st2" d="M70.3,103.6H60.2c-0.9,0-1.6-0.7-1.6-1.6v-4c0-0.9,0.7-1.6,1.6-1.6h10.1c0.9,0,1.6,0.7,1.6,1.6v4   C71.9,102.9,71.2,103.6,70.3,103.6z"/>
+                
+                <path class="st3" d="M77.1,72.6H60l-12.4,7.4c-0.5,0.3-1.1-0.2-1-0.7l1.8-6.7h-5.5c-1.5,0-2.8-1.3-2.8-2.8V48.4   c0-1.5,1.3-2.8,2.8-2.8h34.1c1.5,0,2.8,1.3,2.8,2.8v21.5C79.9,71.4,78.6,72.6,77.1,72.6z"/>
+                
+                <g>
+                
+                <path class="st4" d="M60,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S61.2,57,60,57z"/>
+                
+                <path class="st4" d="M51.4,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S52.6,57,51.4,57z"/>
+                
+                <path class="st4" d="M68.6,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S69.8,57,68.6,57z"/>
+                
+                </g>
+                
+                <g>
+                
+                <path class="st2" d="M29.6,50.9h-8.8c-2.7,0-4.9,2.2-4.9,4.9v19.6c0,2.7,2.2,4.9,4.9,4.9h8.8c1.9,0,3.4-1.5,3.4-3.4V54.2    C32.9,52.4,31.4,50.9,29.6,50.9z"/>
+                
+                <path class="st2" d="M99.2,50.9h-8.8c-1.9,0-3.4,1.5-3.4,3.4v22.6c0,1.9,1.5,3.4,3.4,3.4h8.8c2.7,0,4.9-2.2,4.9-4.9V55.7    C104.1,53,101.9,50.9,99.2,50.9z"/>
+                
+                </g>
+                
+                </g>
                 </svg>
               </div>
               <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-                SEO Services
+                CUSTOMER SERVICE
               </h3>
               <p class="text-gray-500">
-                This is a wider card with supporting text below as a natural
-                content.
+                We provide our best service through our skilled manpower for customer satisfaction. Our efforts are worthwhile if the customers are satisfied.
               </p>
             </div>
             <!-- end service block -->
@@ -304,28 +494,14 @@
             >
               <div class="inline-block text-gray-900 mb-4">
                 <!-- icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="2rem"
-                  height="2rem"
-                  fill="currentColor"
-                  class="bi bi-chat-square-dots"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
-                  />
-                  <path
-                    d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
-                  />
-                </svg>
+                <svg width="2rem"
+                height="2rem" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M546.133333 733.866667c2.133333-8.533333 2.133333-19.2 2.133334-29.866667s0-19.2-2.133334-29.866667l59.733334-42.666666c6.4-4.266667 8.533333-12.8 4.266666-19.2l-57.6-98.133334c-4.266667-6.4-10.666667-8.533333-17.066666-6.4L469.333333 539.733333c-14.933333-12.8-32-21.333333-51.2-29.866666l-6.4-72.533334c0-6.4-6.4-12.8-12.8-12.8h-113.066666c-6.4 0-12.8 6.4-12.8 12.8l-8.533334 74.666667c-19.2 6.4-34.133333 17.066667-51.2 29.866667L147.2 512c-6.4-2.133333-14.933333 0-17.066667 6.4l-57.6 98.133333c-4.266667 6.4-2.133333 14.933333 4.266667 19.2l59.733333 42.666667c-2.133333 8.533333-2.133333 19.2-2.133333 29.866667s0 19.2 2.133333 29.866666l-59.733333 42.666667c-6.4 4.266667-8.533333 12.8-4.266667 19.2l57.6 98.133333c4.266667 6.4 10.666667 8.533333 17.066667 6.4L213.333333 874.666667c14.933333 12.8 32 21.333333 51.2 29.866666l6.4 72.533334c0 6.4 6.4 12.8 12.8 12.8h113.066667c6.4 0 12.8-6.4 12.8-12.8l6.4-72.533334c19.2-6.4 34.133333-17.066667 51.2-29.866666l66.133333 29.866666c6.4 2.133333 14.933333 0 17.066667-6.4l57.6-98.133333c4.266667-6.4 2.133333-14.933333-4.266667-19.2l-57.6-46.933333zM341.333333 810.666667c-59.733333 0-106.666667-46.933333-106.666666-106.666667s46.933333-106.666667 106.666666-106.666667 106.666667 46.933333 106.666667 106.666667-46.933333 106.666667-106.666667 106.666667z" fill="#E65100" /><path d="M893.866667 326.4c2.133333-10.666667 2.133333-19.2 2.133333-27.733333s0-17.066667-2.133333-27.733334l53.333333-38.4c6.4-4.266667 6.4-10.666667 4.266667-17.066666l-53.333334-91.733334c-4.266667-6.4-10.666667-8.533333-17.066666-4.266666l-61.866667 27.733333c-14.933333-10.666667-29.866667-19.2-46.933333-27.733333l-6.4-66.133334c2.133333-6.4-2.133333-10.666667-8.533334-10.666666h-104.533333c-6.4 0-12.8 4.266667-12.8 10.666666l-6.4 66.133334c-17.066667 6.4-32 14.933333-46.933333 27.733333l-61.866667-27.733333c-6.4-2.133333-12.8 0-17.066667 4.266666l-53.333333 91.733334c-4.266667 6.4-2.133333 12.8 4.266667 17.066666l53.333333 38.4V298.666667c0 8.533333 0 17.066667 2.133333 27.733333l-53.333333 38.4c-6.4 4.266667-6.4 10.666667-4.266667 17.066667l53.333334 91.733333c4.266667 6.4 10.666667 8.533333 17.066666 4.266667l61.866667-27.733334c14.933333 10.666667 29.866667 19.2 46.933333 27.733334l6.4 66.133333c0 6.4 6.4 10.666667 12.8 10.666667h104.533334c6.4 0 12.8-4.266667 12.8-10.666667l6.4-66.133333c17.066667-6.4 32-14.933333 46.933333-27.733334l61.866667 27.733334c6.4 2.133333 12.8 0 17.066666-4.266667l53.333334-91.733333c4.266667-6.4 2.133333-12.8-4.266667-17.066667l-59.733333-38.4zM704 405.333333c-59.733333 0-106.666667-46.933333-106.666667-106.666666s46.933333-106.666667 106.666667-106.666667 106.666667 46.933333 106.666667 106.666667-46.933333 106.666667-106.666667 106.666666z" fill="#FFA000" /></svg>
               </div>
               <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-                Social Content
+                SERVICES AT YOUR TIP
               </h3>
               <p class="text-gray-500">
-                This is a wider card with supporting text below as a natural
-                content.
+                Presenting you with the fastest technology to convey your important feedback on how we can serve to achieve customer satisfaction.
               </p>
             </div>
             <!-- end service block -->
@@ -342,28 +518,39 @@
             >
               <div class="inline-block text-gray-900 mb-4">
                 <!-- icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="2rem"
-                  height="2rem"
-                  fill="currentColor"
-                  class="bi bi-badge-ad"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3.7 11l.47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11h1.2zm1.503-4.852l.734 2.426H4.416l.734-2.426h.053zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z"
-                  />
-                  <path
-                    d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"
-                  />
-                </svg>
+                <svg  width="2rem"
+                height="2rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 512 512" xml:space="preserve">
+             <path style="fill:#48AEE2;" d="M256,512c-38.355,0-69.559-31.205-69.559-69.558c0-9.864,7.997-17.86,17.86-17.86h103.397
+               c9.864,0,17.86,7.997,17.86,17.86C325.558,480.795,294.355,512,256,512z"/>
+             <path style="fill:#3797D3;" d="M307.698,424.581H256V512c38.355,0,69.558-31.205,69.558-69.558
+               C325.558,432.577,317.563,424.581,307.698,424.581z"/>
+             <path style="fill:#8DC3E9;" d="M337.189,460.302H174.811c-9.864,0-17.86-7.997-17.86-17.86V309.304
+               c0-13.868,15.205-22.488,27.111-15.278c44.057,26.672,99.783,26.694,143.878,0c11.913-7.212,27.11,1.417,27.11,15.278v133.138
+               C355.049,452.306,347.053,460.302,337.189,460.302z"/>
+             <g>
+               <path style="fill:#48AEE2;" d="M327.94,294.025c-22.043,13.345-46.993,20.012-71.94,20.012v146.264h81.189
+                 c9.864,0,17.86-7.997,17.86-17.86V309.304C355.049,295.442,339.851,286.814,327.94,294.025z"/>
+               <rect x="156.946" y="375.26" style="fill:#48AEE2;" width="198.096" height="35.721"/>
+             </g>
+             <path style="fill:#FFE49C;" d="M165.561,324.582c-51.217-30.994-84.434-86.982-84.434-149.71C81.127,78.447,159.575,0,256,0
+               s174.873,78.447,174.873,174.872c0,62.737-33.222,118.72-84.437,149.711C291.017,358.134,221.035,358.165,165.561,324.582z"/>
+             <g>
+               <path style="fill:#FFD155;" d="M256,0v349.758c31.363,0,62.721-8.396,90.436-25.174c51.214-30.993,84.437-86.975,84.437-149.711
+                 C430.873,78.447,352.425,0,256,0z"/>
+               <path style="fill:#FFD155;" d="M221.987,204.715c-9.864,0-17.86,7.997-17.86,17.86v119.325c11.593,3.594,23.564,5.97,35.721,7.093
+                 V222.576C239.847,212.712,231.85,204.715,221.987,204.715z"/>
+             </g>
+             <rect x="256" y="375.26" style="fill:#3797D3;" width="99.054" height="35.721"/>
+             <path style="fill:#FFBE00;" d="M290.013,204.715c-9.864,0-17.86,7.997-17.86,17.86v126.418c12.157-1.123,24.128-3.498,35.721-7.093
+               V222.576C307.874,212.712,299.877,204.715,290.013,204.715z"/>
+             </svg>
               </div>
               <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-                Creative ads
+                INNOVATIONS
               </h3>
               <p class="text-gray-500">
-                This is a wider card with supporting text below as a natural
-                content.
+                The Internet Society Foundation believes that innovation is a better opportunity to change and enrich people's lives through Internet access.
               </p>
             </div>
             <!-- end service block -->
@@ -376,7 +563,7 @@
     <!-- our services end here -->
   <!-- our Product start here -->
               <!-- =========={ MAIN }==========  -->
-  <main id="product">
+  <main id="products">
     <!-- hero start -->
 		<div id="hero" class="section relative z-0 py-16 md:pt-32 md:pb-20 text-white">
 		  <div class="container xl:max-w-6xl mx-auto px-4">
@@ -441,12 +628,12 @@
 		            <h1 class="text-4xl leading-normal text-white font-bold mb-4">Download our app <span data-toggle="typed" data-options='{"strings": ["to get  ", "started"]}'></span></h1>
 		            <!-- <p class="text-gray-50 leading-relaxed font-light text-xl mx-auto pb-2">We would direct you to limitless ideas and move your brand into a global landscape.</p> -->
 		          </div>
-		    <div class="flex flex-row">
-                <a  href="#portfolio">
+		    <div class="flex flex-row justify-center">
+                <a  href="#">
                     <img class=" w-40 " src="./src/img/playStore.png" />
                     </a>
   
-                    <a class="pt-3"  href="#portfolio">
+                    <a class="pt-3"  href="#">
                       <img src="./src/img/appStore.svg" />
                       </a>
             </div>
@@ -512,687 +699,249 @@
             class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
           >
             <div
-              class="relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
               data-wow-duration="1s"
             >
               <!-- team block -->
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar1.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
+              <div class=" my-4 relative overflow-hidden px-6">
+                <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"src="./src/img/adam.jpg" alt="Rounded avatar">
               </div>
-              <div class="pt-6 text-center">
+              <div class="py-6 text-center">
                 <p class="text-lg leading-normal font-bold mb-1">Adam Wadud</p>
                 <p class="text-gray-500 leading-relaxed font-light">
                   CEO and Founder, Locality
                 </p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
+          
+               
               </div>
             </div>
             <!-- end team block -->
           </div>
 
           <div
-            class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+          class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+        >
+          <div
+            class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+            data-wow-duration="1s"
           >
             <!-- team block -->
-            <div
-              class="relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay=".1s"
-            >
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar3.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
-              </div>
-              <div class="pt-6 text-center">
-                <p class="text-lg leading-normal font-bold mb-1">
-                  Jacob Bennet
-                </p>
-                <p class="text-gray-500 leading-relaxed font-light">
-                  CFO and co-founder, Locality
-                </p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+            <div class=" my-4 relative overflow-hidden px-6">
+              <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" src="src/img/jacob.png" alt="Rounded avatar">
             </div>
-            <!-- end team block -->
+            <div class="py-6 text-center">
+              <p class="text-lg leading-normal font-bold mb-1">Jacob Bennet</p>
+              <p class="text-gray-500 leading-relaxed font-light">
+                CFO and co-founder, Locality
+              </p>
+        
+             
+            </div>
           </div>
+          <!-- end team block -->
+        </div>
+        <div
+        class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+      >
+        <div
+          class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+          data-wow-duration="1s"
+        >
+          <!-- team block -->
+          <div class=" my-4 relative overflow-hidden px-6">
+            <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"src="./src/img/yusef.jpg" alt="Rounded avatar">
+          </div>
+          <div class="py-6 text-center">
+            <p class="text-lg leading-normal font-bold mb-1">MD Yousuf</p>
+            <p class="text-gray-500 leading-relaxed font-light">
+              CTO and co-founder, Locality
+            </p>
+      
+           
+          </div>
+        </div>
+        <!-- end team block -->
+      </div>
+      <div
+      class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+    >
+      <div
+        class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+        data-wow-duration="1s"
+      >
+        <!-- team block -->
+        <div class=" my-4 relative overflow-hidden px-6">
+          <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"     src="src/img/avatar4.png" alt="Rounded avatar">
+        </div>
+        <div class="py-6 text-center">
+          <p class="text-lg leading-normal font-bold mb-1">Harshesh Amin</p>
+          <p class="text-gray-500 leading-relaxed font-light">
+            CMO
+          </p>
+    
+         
+        </div>
+      </div>
+      <!-- end team block -->
+    </div>
+    <div
+    class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+  >
+    <div
+      class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+      data-wow-duration="1s"
+    >
+      <!-- team block -->
+      <div class=" my-4 relative overflow-hidden px-6">
+        <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"src="./src/img/shahed.JPG" alt="Rounded avatar">
+      </div>
+      <div class="py-6 text-center">
+        <p class="text-lg leading-normal font-bold mb-1">Md. Shaheduzzaman</p>
+        <p class="text-gray-500 leading-relaxed font-light">
+          Software Developer
+        </p>
+  
+       
+      </div>
+    </div>
+    <!-- end team block -->
+  </div>
+  <div
+  class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
+>
+  <div
+    class=" relative overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+    data-wow-duration="1s"
+  >
+    <!-- team block -->
+    <div class=" my-4 relative overflow-hidden px-6">
+      <img   class="w-32 h-32 object-cover max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" src="src/img/Harsimran_Singh.jpg"  alt="Rounded avatar">
+    </div>
+    <div class="py-6 text-center">
+      <p class="text-lg leading-normal font-bold mb-1"> Harsimran Singh</p>
+      <p class="text-gray-500 leading-relaxed font-light">
+        Software Developer
+      </p>
 
-          <div
-            class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
-          >
-            <!-- team block -->
-            <div
-              class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay=".3s"
-            >
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar2.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
-              </div>
-              <div class="pt-6 text-center">
-                <p class="text-lg leading-normal font-bold mb-1">MD Yousuf</p>
-                <p class="text-gray-500 leading-relaxed font-light">
-                  CTO and co-founder, Locality
-                </p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end team block -->
-          </div>
+     
+    </div>
+  </div>
+  <!-- end team block -->
+</div>
 
-          <div
-            class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
-          >
-            <!-- team block -->
-            <div
-              class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay=".5s"
-            >
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar4.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
-              </div>
-              <div class="pt-6 text-center">
-                <p class="text-lg leading-normal font-bold mb-1">
-                  Harshesh Amin
-                </p>
-                <p class="text-gray-500 leading-relaxed font-light">CMO</p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end team block -->
-          </div>
-          <div
-            class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
-          >
-            <!-- team block -->
-            <div
-              class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay=".3s"
-            >
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar2.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
-              </div>
-              <div class="pt-6 text-center">
-                <p class="text-lg leading-normal font-bold mb-1">
-                  Md. Shaheduzzaman
-                </p>
-                <p class="text-gray-500 leading-relaxed font-light">
-                  Software Developer
-                </p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end team block -->
-          </div>
-          <div
-            class="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
-          >
-            <!-- team block -->
-            <div
-              class="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
-              data-wow-duration="1s"
-              data-wow-delay=".3s"
-            >
-              <div class="relative overflow-hidden px-6">
-                <img
-                  src="src/img/dummy/avatar2.png"
-                  class="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                  alt="title image"
-                />
-              </div>
-              <div class="pt-6 text-center">
-                <p class="text-lg leading-normal font-bold mb-1">
-                  Harsimran Singh
-                </p>
-                <p class="text-gray-500 leading-relaxed font-light">
-                  Software Developer
-                </p>
-                <!-- social icon -->
-                <div class="mt-2 mb-5 space-x-2">
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Twitter link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-twitter text-twitter"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Facebook link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-facebook text-facebook"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Instagram link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-instagram text-instagram"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
-                      ></path>
-                      <path
-                        fill="currentColor"
-                        d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    class="hover:text-blue-700"
-                    aria-label="Linkedin link"
-                    href="#"
-                  >
-                    <!-- <i class="fab fa-linkedin text-linkedin"></i> -->
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block"
-                      width="1rem"
-                      height="1rem"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end team block -->
-          </div>
         </div>
         <!-- end row -->
       </div>
     </div>
     <!-- End Team-->
+    <!-- news latter stats here -->
+    <div
+      id="contact"
+      class="bg-gradient-to-r from-primary to-secondary section relative pb-12 bg-white dark:bg-gray-800 "
+    >
+      <div class="container xl:max-w-6xl mx-auto px-4">
+        <div class="flex flex-wrap flex-row -mx-4 justify-center">
+          <div class="max-w-ful px-4 w-full lg:w-8/12">
+            <div
+              class="bg-gray-50 border-b border-gray-100 w-full p-12 wow fadeInUp my-6"
+              data-wow-duration="1s"
+              data-wow-delay=".5s"
+            >
+              <!-- section header -->
+              <header class="text-center mx-auto mb-12 lg:px-20">
+                <h2
+                  class="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100"
+                >
+                  <span class="font-light">NEWSLETTER </span> SIGN UP
+                </h2>
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 60"
+                  style="margin: 0 auto; height: 35px"
+                  xml:space="preserve"
+                >
+                  <circle
+                    cx="50.1"
+                    cy="30.4"
+                    r="5"
+                    class="stroke-primary"
+                    style="
+                      fill: transparent;
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                  ></circle>
+                  <line
+                    x1="55.1"
+                    y1="30.4"
+                    x2="100"
+                    y2="30.4"
+                    class="stroke-primary"
+                    style="stroke-width: 2; stroke-miterlimit: 10"
+                  ></line>
+                  <line
+                    x1="45.1"
+                    y1="30.4"
+                    x2="0"
+                    y2="30.4"
+                    class="stroke-primary"
+                    style="stroke-width: 2; stroke-miterlimit: 10"
+                  ></line>
+                </svg>
+            
+              </header>
+              <!-- end section header -->
+     <!-- contact form -->
+     <form action="#">
+      <div class="flex flex-wrap flex-row -mx-4">
+        <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+          <label class="inline-block mb-2" for="name"
+            >Your Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+            id="name2"
+          />
+          <div class="validate"></div>
+        </div>
+        <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
+          <label class="inline-block mb-2" for="email"
+            >Your Email</label
+          >
+          <input
+            type="email"
+            class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+            name="email"
+            id="email2"
+          />
+          <div class="validate"></div>
+        </div>
+      </div>
+  
+
+      <div class="text-center mb-6">
+        <a
+          class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+          href="#project"
+          onclick="submitSubscribe()"
+        >
+
+         Subscribe
+        </a>
+      </div>
+    </form>
+    <!-- news latter end here -->
+  </div>
+  </div>
+  </div>
+  </div>
+
 
     <!-- contact start -->
     <div
@@ -1261,17 +1010,17 @@
               <!-- end section header -->
 
               <!-- contact form -->
-              <form action="#">
+              <form action="sendMail" id="formElem">
                 <div class="flex flex-wrap flex-row -mx-4">
                   <div class="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
                     <label class="inline-block mb-2" for="name"
                       >Your Name</label
                     >
                     <input
-                      type="text"
-                      name="name"
-                      class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
-                      id="name"
+                    type="text"
+                    class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                    name="name"
+                    id="name"
                     />
                     <div class="validate"></div>
                   </div>
@@ -1284,6 +1033,7 @@
                       class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
                       name="email"
                       id="email"
+                     
                     />
                     <div class="validate"></div>
                   </div>
@@ -1295,6 +1045,7 @@
                     class="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
                     name="subject"
                     id="subject"
+                   
                   />
                   <div class="validate"></div>
                 </div>
@@ -1307,13 +1058,14 @@
                     name="message"
                     rows="10"
                     id="messages"
+                   
                   ></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="text-center mb-6">
-                  <a
-                    class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
-                    href="#project"
+                  <a    class="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+                  href="#project"
+                    onclick="submitForm()"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1361,6 +1113,19 @@
     </div>
     <!-- End contact -->
 
+    <div>
+      <iframe
+      class="location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308.57652192737123!2d-52.70436451828022!3d47.56700151389478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3b8dfb612b7%3A0x358bb9e9c16a9600!2sSt%20Johns%20Ln%2C%20St.%20John&#39;s%2C%20NL%2C%20Canada!5e0!3m2!1sen!2sbd!4v1674909879877!5m2!1sen!2sbd"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    </div>
+ 
     <!-- =========={ FOOTER }==========  -->
     <footer
       class="bg-gradient-to-r from-primary to-secondary bg-gray-50 text-gray-700"
@@ -1487,59 +1252,11 @@
 
                 <!--end instagram-->
               </ul>
-              <div class="text-center sm:text-left md:col-span-4 lg:col-span-2">
-                <p class="text-lg font-medium text-white">NEWSLETTER SIGN UP</p>
 
-                <div class="mx-auto mt-8 max-w-md sm:ml-0">
-                  <!-- <p class="text-center leading-relaxed text-gray-500 sm:text-left">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id,
-                    iure consectetur et error hic!
-                  </p> -->
-
-                  <form class="my-4">
-                    <div class="flex flex-row gap-4 sm:flex-row lg:items-start">
-                      <label for="email" class="sr-only">Email</label>
-
-                      <input
-                        class="w-full rounded-full border-gray-200 px-6 py-3 shadow-sm"
-                        type="email"
-                        placeholder="Enter your email"
-                      />
-
-                      <button
-                        class="block rounded-full bg-yellow-400 px-8 py-3 font-medium text-white transition hover:bg-indigo-600"
-                        type="submit"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
             <div class="flex-shrink max-w-full w-full lg:w-3/5 px-3">
               <div class="flex flex-wrap flex-row">
-                <!-- <div class="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0">
-                  <h4
-                    class="text-base leading-normal mb-3 uppercase text-gray-50 font-bold"
-                  >
-                    Support
-                  </h4>
-                  <ul>
-                    <li class="py-1 hover:text-gray-900">
-                      <a href="docs/index.html">Documentation</a>
-                    </li>
-                    <li class="py-1 hover:text-gray-900">
-                      <a href="docs/components.html">Components</a>
-                    </li>
-                    <li class="py-1 hover:text-gray-900">
-                      <a href="docs/credits.html">Credits</a>
-                    </li>
-                    <li class="py-1 hover:text-gray-900">
-                      <a href="docs/changelogs.html">Changelog</a>
-                    </li>
-                  </ul>
-                </div> -->
+   
 
                 <div class="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0">
                   <h4
@@ -1549,32 +1266,20 @@
                   </h4>
                   <ul>
                     <li class="py-1 hover:text-gray-900">
-                      <a href="#">Privacy Policy</a>
+                      <a href="./privacyPolicy.html">Privacy Policy</a>
                     </li>
-                    <li class="py-1 hover:text-gray-900">
+                    <!-- <li class="py-1 hover:text-gray-900">
                       <a href="#">Terms of Use</a>
-                    </li>
-                    <li class="py-1 hover:text-gray-900">
+                    </li> -->
+                    <!-- <li class="py-1 hover:text-gray-900">
                       <a href="#">License</a>
                     </li>
                     <li class="py-1 hover:text-gray-900">
                       <a href="#">GDPR</a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
-                <div
-                  class="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0 mr-2"
-                >
-                  <div>
-                    <iframe
-                      class="location rounded"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308.57652192737123!2d-52.70436451828022!3d47.56700151389478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3b8dfb612b7%3A0x358bb9e9c16a9600!2sSt%20Johns%20Ln%2C%20St.%20John&#39;s%2C%20NL%2C%20Canada!5e0!3m2!1sen!2sbd!4v1674909879877!5m2!1sen!2sbd"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
+           
               </div>
             </div>
           </div>
@@ -1584,7 +1289,7 @@
       <!--Start footer copyright-->
       <div class="footer-dark text-white">
         <div
-          class="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 border-opacity-10"
+          class="container xl:max-w-6xl mx-auto px-4 py-2 border-t border-gray-200 border-opacity-10"
         >
           <div class="row">
             <div class="col-12 col-md text-center">
@@ -1635,5 +1340,6 @@
 
     <!-- Start development js -->
     <script src="src/js/theme.js"></script>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
